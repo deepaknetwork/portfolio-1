@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<head>
+   
+    <title>cat matrimony</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+.bod {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+	height: 600px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.bod>h1{
+ 
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 11%;
+    font-size: 100px;
+    color: #ffffff;
+
+}
+.container{
+    position: absolute;
+    margin-top: 340px;
+    margin-left:11%
+
+}
+
+.bod>img{
+    position: relative;
+    height: 450px;
+    width: 265px;
+    margin-left: 70%;
+    margin-top: 200px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    
+}
+.btn-store {
+  color: #ffffff;
+  min-width: 254px;
+  padding: 12px 20px !important;
+  border-color: #dddddd !important;
+}
+
+.btn-store:focus, 
+.btn-store:hover {
+  color: #000000 !important;
+  background-color: #ffffff;
+  border-color: #ffffff !important;
+}
+
+.btn-store .btn-label, 
+.btn-store .btn-caption {
+  display: block;
+  text-align: left;
+  line-height: 1;
+}
+
+.btn-store .btn-caption {
+  font-size: 24px;
+}
+
+
+#dis{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+#wel{
+    
+  color: black; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 55px;
+  margin: 10px 0 0 10px;
+  margin-top: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: animtext 4s steps(80, end); 
+transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+@keyframes animtext { 
+  from {
+      width: 0;
+     transition: all 2s ease-in-out;
+  } 
+}
+
+#para{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 80px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#cap{
+    display: flex;
+    position: relative;
+    margin-top: 80px;
+    justify-content: space-around;
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+#iimg{
+    display: flex;
+    justify-content: center;
+}
+
+#des-img{
+    height: 80px;
+    width: 80px;
+}
+
+
+#sel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+
+ 
+
+}
+
+#icon{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#plan{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#part{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 150px;
+    row-gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+
+}
+#pid{
+    height: 80px;
+    width: 80px;
+}
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700italic,700,500&subset=latin,latin-ext");
+.panel.price,
+		.panel.price>.panel-heading{
+			border-radius:0px;
+			 -moz-transition: all .3s ease;
+			-o-transition:  all .3s ease;
+			-webkit-transition:  all .3s ease;
+		}
+		.panel.price:hover{
+			box-shadow: 0px 0px 30px rgba(0,0,0, .2);
+		}
+		.panel.price:hover>.panel-heading{
+			box-shadow: 0px 0px 30px rgba(0,0,0, .2) inset;
+		}
+		
+				
+		.panel.price>.panel-heading{
+			box-shadow: 0px 5px 0px rgba(50,50,50, .2) inset;
+			text-shadow:0px 3px 0px rgba(50,50,50, .6);
+		}
+			
+		.price .list-group-item{
+			border-bottom-:1px solid rgba(250,250,250, .5);
+		}
+		
+		.panel.price .list-group-item:last-child {
+			border-bottom-right-radius: 0px;
+			border-bottom-left-radius: 0px;
+		}
+		.panel.price .list-group-item:first-child {
+			border-top-right-radius: 0px;
+			border-top-left-radius: 0px;
+		}
+		
+		.price .panel-footer {
+			color: #1f1717;
+			border-bottom:0px;
+			background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+			box-shadow: 0px 3px 0px rgba(0,0,0, .3);
+		}
+		
+		
+		.panel.price .btn{
+			box-shadow: 0 -1px 0px rgba(50,50,50, .2) inset;
+			border:0px;
+		}
+		
+	/* green panel */
+	
+		
+		.price.panel-green>.panel-heading {
+			color: #fff;
+			background-color: #57AC57;
+			border-color: #71DF71;
+			border-bottom: 1px solid #71DF71;
+		}
+		
+			
+		.price.panel-green>.panel-body {
+			color: #fff;
+			background-color: #65C965;
+		}
+				
+		
+		.price.panel-green>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-green .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* blue panel */
+	
+		
+		.price.panel-blue>.panel-heading {
+			color: #fff;
+			background-color: #608BB4;
+			border-color: #78AEE1;
+			border-bottom: 1px solid #78AEE1;
+		}
+		
+			
+		.price.panel-blue>.panel-body {
+			color: #fff;
+			background-color: #73A3D4;
+		}
+				
+		
+		.price.panel-blue>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-blue .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* red price */
+		
+	
+		.price.panel-red>.panel-heading {
+			color: #fff;
+			background-color: #D04E50;
+			border-color: #FF6062;
+			border-bottom: 1px solid #FF6062;
+		}
+		
+			
+		.price.panel-red>.panel-body {
+			color: #fff;
+			background-color: #EF5A5C;
+		}
+		
+		
+		
+		
+		.price.panel-red>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-red .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* grey price */
+		
+	
+		.price.panel-grey>.panel-heading {
+			color: #fff;
+			background-color: #6D6D6D;
+			border-color: #B7B7B7;
+			border-bottom: 1px solid #B7B7B7;
+		}
+		
+			
+		.price.panel-grey>.panel-body {
+			color: #fff;
+			background-color: #000000;
+		}
+		
+
+		
+		.price.panel-grey>.panel-body .lead{
+				text-shadow: 0px 3px 0px rgba(50,50,50, .3);
+		}
+		
+		.price.panel-grey .list-group-item {
+			color: #333;
+			background-color: rgba(50,50,50, .01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+		
+		/* white price */
+		
+	
+		.price.panel-white>.panel-heading {
+			color: #ffffff;
+			background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+			border-color: #f9f9f9;
+			border-bottom: 1px solid #ffffff;
+			text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.7);
+		}
+		
+		.panel.panel-white.price:hover>.panel-heading{
+			box-shadow: 0px 0px 30px rgba(0,0,0, .05) inset;
+		}
+			
+		.price.panel-white>.panel-body {
+			color: #fff;
+			background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+		}
+				
+		.price.panel-white>.panel-body .lead{
+				text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.8);
+				color:#ffffff;
+		}
+		
+		.price:hover.panel-white>.panel-body .lead{
+				text-shadow: 0px 2px 0px rgba(73, 72, 72, 0.9);
+				color:#000000;
+		}
+		
+		.price.panel-white .list-group-item {
+			color: #333;
+			background-color: rgba(230, 0, 0, 0.01);
+			font-weight:600;
+			text-shadow: 0px 1px 0px rgba(250,250,250, .75);
+		}
+
+
+
+.end {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+	height: auto;
+    font-size: 13px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+</style>
+</head>
+<body>
+<section class="bod">
+    
+        <h1 class="elegantshd">Cat Matrimony</h1>
+        <div class="container">
+            <div >
+                <br/>
+                <p>
+                    <a href="https://app.adjust.net.in/m9r6x2t" class="btn btn-store">
+                        <span class="fa fa-apple fa-3x pull-left"></span> 
+                        <span class="btn-label">Download on the</span>
+                        <span class="btn-caption">App Store</span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.pubg.imobile" class="btn btn-store">
+                        <span class="fa fa-android fa-3x pull-left"></span> 
+                        <span class="btn-label">Download on the</span>
+                        <span class="btn-caption">Google Play</span>
+                    </a>
+                  
+                </p>
+            </div>
+        </div>
+   <img src="hai.jpg" alt="cat" claas="img">
+
+</section>
+<section >
+        <div id="dis"><h2 id="wel">Wellcome to Cat Matrimony!</h2></div>
+        <br><br><br><br>
+        <div><p id="para">Cat Matrimony is an exclusive online platform designed to connect feline companions and facilitate the process of finding suitable feline life partners. It provides a unique and specialized avenue for cat owners who are interested in arranging marriages or companionships for their beloved pets.</p></div>
+    </section>
+<br>
+<section id="cap">
+    
+    <div>
+     <div id="iimg">
+        <img src="easy.jpg"  id="des-img"> 
+     </div>
+     <div id="iimg">
+        <h2>simple interface to use</h2>
+    </div>
+    </div>
+     <div >
+        <div id="iimg">
+            <img src="safe.jpg" id="des-img">
+        </div> 
+        <div id="iimg"><h2>completly end-to-end encripted</h2></div>
+        </div>
+    </div>
+     <div> 
+        <div id="iimg">
+            <img src="100.jpg" id="des-img">
+        </div>
+        <div id="iimg"><h2>assured successfull aliance</h2></div>
+    </div>
+</section>
+
+<section>
+    
+    <div id="sel">
+        <br><br>
+    <p id="para">Overall, Cat Matrimony serves as a dedicated platform for cat owners who wish to find suitable life partners for their feline companions. By leveraging technology and a community-driven approach, it aims to bring together like-minded cat lovers and facilitate lifelong connections for their cherished pets, ensuring a joyous and fulfilling companionship for all involved. </div>
+<br><br>
+        <div id="sel">     
+<h1 >"One man can be a crucial ingredient on a team, but one man cannot make a team." </h1> 
+<div id="sel" style="justify-content: end; margin-right: 100px;"><h1>— Kareem Abdul-Jabbar</h1></div>
+<br><br>  
+<img src="id.jpg" id="icon">
+</div>
+<br><br><br>
+<div id="sel"><h1>Our company partners are</h1></div>
+<br><br><br>
+<div id="part">
+<img src="ggg.jpg" id="pid">
+<img src="mic.jpg" id="pid">
+<img src="apple.jpg" id="pid">
+<img src="twt.jpg" id="pid">
+<img src="ins.jpg" id="pid">
+<img src="ama.jpg" id="pid">
+
+<img src="fb.jpg" id="pid">
+
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="sel">
+    <h1>please select an suitable plan to use Cat matrimony and start enjoying it benifits</h1>
+</div>
+<div><p id="para">At Cat Matrimony, we understand that finding the perfect companion for your beloved feline friend is of utmost importance. That's why we offer a range of pricing plans designed to cater to your needs, ensuring a seamless and delightful experience in your quest for feline love.</p></div>
+  
+   
+    <br><br>
+    
+    <div id="plan">
+                    <div>
+                    
+                        <!-- PRICE ITEM -->
+                        <div class="panel price panel-white">
+                            <div class="panel-heading arrow_box text-center">
+                            <h1>WHISKERS PLAN</h1>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p class="lead" style="font-size:40px"><strong>$9 / month</strong></p>
+                            </div>
+                            <ul class="list-group list-group-flush text-center">
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> Basic</li>
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> cat profiles</li>
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> purr-fect companion</li>
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block btn-default" href="#"><b>BUY NOW!</b></a>
+                            </div>
+                        </div>
+                        <!-- /PRICE ITEM -->
+                        
+                        
+                    </div>
+                    
+                    <div >
+                    
+                        <!-- PRICE ITEM -->
+                        <div class="panel price panel-white">
+                            <div class="panel-heading arrow_box text-center">
+                            <h1>PAWSOME PLAN</h1>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p class="lead" style="font-size:40px"><strong>$19 / month</strong></p>
+                            </div>
+                            <ul class="list-group list-group-flush text-center">
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> Standard</li>
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> potential matches</li>
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> discovering a soulmate</li>
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block btn-default" href="#"><b>BUY NOW!</b></a>
+                            </div>
+                        </div>
+                        <!-- /PRICE ITEM -->
+                        
+                        
+                    </div>
+                    
+                    <div>
+                    
+                        <!-- PRICE ITEM -->
+                        <div class="panel price panel-white">
+                            <div class="panel-heading arrow_box text-center">
+                            <h1>MEOWVELOUS PLAN</h1>
+                            </div>
+                            <div class="panel-body text-center">
+                                <p class="lead" style="font-size:40px"><strong>$29 / month</strong></p>
+                            </div>
+                            <ul class="list-group list-group-flush text-center">
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> Premium</li>
+                                <li class="list-group-item"><i class="icon-ok text-success"></i>Pawsome Plan</li>
+                                <li class="list-group-item"><i class="icon-ok text-success"></i> matchmaking specialist</li>
+                            </ul>
+                            <div class="panel-footer">
+                                <a class="btn btn-lg btn-block btn-default" href="#"><b>BUY NOW!</b></a>
+                            </div>
+                        </div>
+                        <!-- /PRICE ITEM -->
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+    </div>
+
+    <div><p id="para">"Believe in the magic of feline connections, where whiskers meet and hearts entwine. At Cat Matrimony, we are dedicated to creating lifelong bonds</p></div>
+    <div><p id="sel" style="justify-content: center; font-size: 20px"> between feline soulmates. Trust in us, for love knows no bounds when it comes to our purr-fect companions"</p></div>
+   <br><br><br>
+</section>
+
+
+
+<section class="end">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Products
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>New York, NY 10012, US</p>
+              <p>
+               
+                info@example.com
+              </p>
+              <p> + 01 234 567 88</p>
+              <p> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); margin-top: 180px;">
+        © 2021 Copyright: catmatrimony.com
+      </div>
+</section>
+
+
+
+</body>
+</html>
